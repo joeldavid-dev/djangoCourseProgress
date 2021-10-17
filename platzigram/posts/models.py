@@ -28,3 +28,7 @@ class User(models.Model):
 
 	#Guarda automáticamente la fecha de edición.
 	modified = models.DateTimeField(auto_now=True)
+
+	def __str__(self):
+		"""Return email."""
+		return self.email
